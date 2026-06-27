@@ -41,6 +41,13 @@ You run several AI CLIs on the same project and none of them know what the other
 - **Pluggable vector backend.** Ships with a built-in embedded vector-plus-keyword engine. Swap in qdrant, pgvector, chroma, or weaviate behind one trait.
 - **One ruleset, every agent.** Write your rules once in `prompt.toml`; scritty assembles them into every message before it reaches whichever agent is running, alongside that vendor's own rule file. Toggle live with `Ctrl+Shift+E/R/G/K`.
 - **Use it anywhere.** The terminal embeds a web server; the same session is live on your phone or any browser as a PWA, in sync in real time. TLS is always on, every connection is bearer-token gated, and reaching it beyond your LAN takes an explicit opt-in.
+- **Pick up where you left off.** Browser-style tab restore: quit with several tabs open and the next launch brings every one back, each shell already in the directory you left it. Tab pills show each shell's live working directory.
+
+<p align="center">
+  <img src="scritty-tabs.gif" alt="scritty open with four tabs at different working directories, closed to an empty desktop, then relaunched with all four tabs restored at their paths" width="620" />
+  <br />
+  <em>Close it. Reopen it. Same tabs, same paths.</em>
+</p>
 
 ## Interfaces
 
