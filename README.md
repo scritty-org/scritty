@@ -15,6 +15,10 @@
 </p>
 
 <p align="center">
+  <a href="https://www.producthunt.com/products/scritty?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-scritty" target="_blank" rel="noopener noreferrer"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1185930&theme=neutral&t=1782953094350" alt="scritty - Shared, searchable memory for every AI coding agent | Product Hunt" width="250" height="54" /></a>
+</p>
+
+<p align="center">
   <img src="scritty-search.gif" alt="Searching one shared memory across agents from inside the terminal" width="760" />
   <br />
   <em>Ctrl+Shift+M: search every agent's captured conversations, inline, in the terminal.</em>
