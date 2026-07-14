@@ -40,6 +40,7 @@ You run several AI CLIs on the same project and none of them know what the other
 ## What it does
 
 - **Agent-agnostic capture.** Run any AI CLI inside scritty; it identifies the agent from the process running in the terminal and tags every exchange with the provider.
+- **Your default terminal.** Register scritty as your system default terminal on Linux (the `x-terminal-emulator` contract) and Windows (the Default Terminal Application handoff), so every terminal your desktop, file manager, or editor opens is already scritty, already capturing.
 - **One corpus across vendors.** A Claude session and a Codex session weeks later about the same bug live in the same store and surface in one query.
 - **Hybrid local search.** Vector plus keyword search via Reciprocal Rank Fusion, dual offline ONNX embeddings, one tuned for code and one for prose. All offline.
 - **Pluggable vector backend.** Ships with a built-in embedded vector-plus-keyword engine. Swap in qdrant, pgvector, chroma, or weaviate behind one trait.
