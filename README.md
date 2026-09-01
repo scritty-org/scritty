@@ -61,6 +61,25 @@ You run several AI CLIs on the same project and none of them know what the other
 - **Use it anywhere.** The terminal embeds a web server; the same session is live on your phone or any browser as a PWA, in sync in real time. TLS is always on, every connection is bearer-token gated, and reaching it from any device other than the machine it runs on takes an explicit opt-in.
 - **Pick up where you left off.** Browser-style tab restore: quit with several tabs open and the next launch brings every one back, each shell already in the directory you left it. Tab pills show each shell's live working directory.
 
+### Pair your phone
+
+The web listener is loopback-only by default. After configuring a trusted
+Tailscale Funnel origin, mint a scoped pairing URL and scan the QR code:
+
+```sh
+scritty pair --admin --origin https://machine.tailnet.ts.net
+```
+
+Use `--sessions '<id>'` instead of `--admin` when the phone should reach only
+one session. The cleartext bearer is shown for pairing and rides in the URL
+fragment; scritty persists only its SHA-256 hash.
+
+<p align="center">
+  <img src="scritty-pair-qr.png" alt="Example scritty pair --admin QR and HTTPS pairing URL with a token fragment; not a live token" width="760" />
+  <br />
+  <em>Scan the code and the same live PTY opens on your phone - no app store or scritty account.</em>
+</p>
+
 <p align="center">
   <img src="scritty-tabs.gif" alt="scritty open with four tabs at different working directories, closed to an empty desktop, then relaunched with all four tabs restored at their paths" width="620" />
   <br />
