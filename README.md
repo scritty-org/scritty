@@ -75,9 +75,9 @@ one session. The cleartext bearer is shown for pairing and rides in the URL
 fragment; scritty persists only its SHA-256 hash.
 
 <p align="center">
-  <img src="scritty-pair-qr.png" alt="Example scritty pair --admin QR and HTTPS pairing URL with a token fragment; not a live token" width="760" />
+  <img src="scritty-pwa-phone.png" alt="The same scritty session open in the mobile PWA, showing desktop and phone input with the on-screen keyboard" width="320" />
   <br />
-  <em>Scan the code and the same live PTY opens on your phone - no app store or scritty account.</em>
+  <em>Scan the pairing code and the same live PTY opens on your phone - no app store or scritty account.</em>
 </p>
 
 <p align="center">
