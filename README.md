@@ -74,11 +74,23 @@ Use `--sessions '<id>'` instead of `--admin` when the phone should reach only
 one session. The cleartext bearer is shown for pairing and rides in the URL
 fragment; scritty persists only its SHA-256 hash.
 
-<p align="center">
-  <img src="scritty-pwa-phone.png" alt="The same scritty session open in the mobile PWA, showing desktop and phone input with the on-screen keyboard" width="320" />
-  <br />
-  <em>Scan the pairing code and the same live PTY opens on your phone - no app store or scritty account.</em>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="scritty-pwa-desktop.png" alt="scritty desktop terminal showing HELLO_FROM_DESKTOP and HELLO_FROM_PHONE in one live session" width="420" />
+      <img src="scritty-pwa-phone.png" alt="The same scritty session open in the mobile PWA with the on-screen keyboard" width="150" />
+    </td>
+    <td align="center">
+      <img src="scritty-pair-qr.png" alt="Example scritty pair command, QR code, and HTTPS pairing URL with a token fragment; not a live token" width="500" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><em>One session on the desktop and phone.</em></td>
+    <td align="center"><em>Generate a scoped URL and scan its pairing code.</em></td>
+  </tr>
+</table>
+
+The same live PTY opens on the phone - no app store and no scritty account.
 
 <p align="center">
   <img src="scritty-tabs.gif" alt="scritty open with four tabs at different working directories, closed to an empty desktop, then relaunched with all four tabs restored at their paths" width="620" />
